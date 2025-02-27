@@ -13,10 +13,13 @@ import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
 
 export const navItems = [
-  { label: "Features", href: "#" },
-  { label: "Workflow", href: "#" },
-  { label: "Pricing", href: "#" },
-  { label: "Testimonials", href: "#" },
+  { label: "Acceuil", href: "#" },
+  { label: "Actualités", href: "#" },
+  { label: "Fonctionalités", href: "#" },
+  { label: "Bourses Olympiques", href: "#" },
+  { label: "Evenements", href: "#" },
+  { label: "Médiathéque", href: "#" },
+
 ];
 
 export const testimonials = [
@@ -61,39 +64,39 @@ export const testimonials = [
 export const features = [
   {
     icon: <BotMessageSquare />,
-    text: "Drag-and-Drop Interface",
+    text: "Suivi des performances en temps réel",
     description:
-      "Easily design and arrange your VR environments with a user-friendly drag-and-drop interface.",
+      "La plateforme permettra aux sportifs de suivre leurs performances en temps réel.",
   },
   {
     icon: <Fingerprint />,
-    text: "Multi-Platform Compatibility",
+    text: "Analyse des données",
     description:
-      "Build VR applications that run seamlessly across multiple platforms, including mobile, desktop, and VR headsets.",
+      "La plateforme utilisera l'IA pour analyser les données collectées et identifier les points forts et les points faibles des sportifs.",
   },
   {
     icon: <ShieldHalf />,
-    text: "Built-in Templates",
+    text: "Prevention des blessures",
     description:
-      "Jumpstart your VR projects with a variety of built-in templates for different types of applications and environments.",
+      "Prevention des blessures La plateforme identifiera les risques potentiels de blessures et fournira des conseils pour les prévenir.",
   },
   {
     icon: <BatteryCharging />,
-    text: "Real-Time Preview",
+    text: "L'utilisation de IA",
     description:
-      "Preview your VR application in real-time as you make changes, allowing for quick iterations and adjustments.",
+      "utilisation de l'intelligence artificielle conversationnelle.",
   },
   {
     icon: <PlugZap />,
-    text: "Collaboration Tools",
+    text: "Une plateforme IA",
     description:
-      "Work together with your team in real-time on VR projects, enabling seamless collaboration and idea sharing.",
+      "Une plateforme IA qui permet aux sportifs de trouver des partenaires d'entrainement.",
   },
   {
     icon: <GlobeLock />,
-    text: "Analytics Dashboard",
+    text: "L'utilisation de l'analyse vidéo",
     description:
-      "Gain valuable insights into user interactions and behavior within your VR applications with an integrated analytics dashboard.",
+      "L'analyse vidéo peut fournir des informations précieuses sur les performances des athlètes.",
   },
 ];
 

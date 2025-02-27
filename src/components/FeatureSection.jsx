@@ -4,29 +4,22 @@ const FeatureSection = () => {
   return (
     <div className="relative mt-20 border-b border-neutral-800 min-h-[800px]">
       <div className="text-center">
-        <span className="bg-neutral-900 text-orange-500 rounded-full h-6 text-sm font-medium px-2 py-1 uppercase">
+        <span className="bg-neutral-900 text-[#BA52ED] rounded-full h-6 text-sm font-medium px-4 py-1 uppercase">
           Feature
         </span>
         <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide">
-          Easily build{" "}
-          <span className="bg-gradient-to-r from-orange-500 to-orange-800 text-transparent bg-clip-text">
-            your code
-          </span>
+          Qu'offrons
+          <span className="text-[#BA52ED] bg-clip-text"> nous </span>
         </h2>
       </div>
-      <div className="flex flex-wrap mt-10 lg:mt-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 lg:mt-20">
         {features.map((feature, index) => (
-          <div key={index} className="w-full sm:w-1/2 lg:w-1/3">
-            <div className="flex">
-              <div className="flex mx-6 h-10 w-10 p-2 bg-neutral-900 text-orange-700 justify-center items-center rounded-full">
-                {feature.icon}
-              </div>
-              <div>
-                <h5 className="mt-1 mb-6 text-xl">{feature.text}</h5>
-                <p className="text-md p-2 mb-20 text-neutral-500">
-                  {feature.description}
-                </p>
-              </div>
+          <div key={index} className="card-wrapper min-h-48 w-full ">
+            <div className="card-content flex flex-col justify-center gap-4">
+              <h2 className="text-xl font-semibold">{feature.text}</h2>
+              <p className="text-base text-neutral-400">
+                {feature.description}
+              </p>
             </div>
           </div>
         ))}
