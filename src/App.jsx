@@ -1,19 +1,21 @@
-import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
-import FeatureSection from "./components/FeatureSection";
-import Workflow from "./components/Workflow";
-import Footer from "./components/Footer";
-import Pricing from "./components/Pricing";
-import Testimonials from "./components/Testimonials";
+import Navbar from "./Sections/Navbar";
+import HeroSection from "./Sections/HeroSection";
+import FeatureSection from "./Sections/FeatureSection";
+import Workflow from "./Sections/Workflow";
+import Footer from "./Sections/Footer";
+import Pricing from "./Sections/Pricing";
+import Testimonials from "./Sections/Testimonials";
+import EventSection from "./Sections/EventSection";
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <div className="max-w-7xl mx-auto pt-20 px-6">
+      <div className="lg:mx-32 md:mx-16 px-6">
         <HeroSection />
         <FeatureSection />
         <Workflow />
+        <EventSection />
         <Pricing />
         <Testimonials />
         <Footer />

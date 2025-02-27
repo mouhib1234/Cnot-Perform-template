@@ -19,7 +19,6 @@ export const navItems = [
   { label: "Bourses Olympiques", href: "#" },
   { label: "Evenements", href: "#" },
   { label: "Médiathéque", href: "#" },
-
 ];
 
 export const testimonials = [
@@ -178,4 +177,33 @@ export const communityLinks = [
   { href: "#", text: "Conferences" },
   { href: "#", text: "Hackathons" },
   { href: "#", text: "Jobs" },
+];
+
+export const eventsData = [
+  {
+    id: 1,
+    date: { month: "SEP", day: "18" },
+    title: "Fares Farjani Secures Tunisia’s First Medal in Paris 2024 Oly...",
+    description:
+      "Tunisian fencer Fares Farjani has made history by securing Tunisia’s...",
+    imageUrl:
+      "https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w960/f_auto/primary/h6dsglcktfuaa5r7lupw", // Replace with actual image path
+  },
+  {
+    id: 2,
+    date: { month: "OCT", day: "05" },
+    title: "New World Record in Swimming at the Paris 2024 Olympics",
+    description:
+      "A historic moment as a new record is set in freestyle swimming...",
+    imageUrl:
+      "https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_md_2x/f_auto/primary/axgnen3ogsx69q4rvnyv",
+  },
+  {
+    id: 3,
+    date: { month: "NOV", day: "12" },
+    title: "Tunisia’s National Football Team Qualifies for World Cup 2026",
+    description: "A thrilling victory sends Tunisia to the World Cup...",
+    imageUrl:
+      "https://dicodusport.fr/blog/wp-content/uploads/2024/08/Taekwondo-JO-2024-Ulugbek-Rashitov-double-champion-olympique-a-22-ans.png",
+  },
 ];

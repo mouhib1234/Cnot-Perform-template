@@ -14,7 +14,7 @@ const FeatureSection = () => {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 lg:mt-20">
         {features.map((feature, index) => (
-          <div key={index} className="card-wrapper min-h-48 w-full ">
+          <div key={index} className="card-wrapper p-8">
             <div className="card-content flex flex-col justify-center gap-4">
               <h2 className="text-xl font-semibold">{feature.text}</h2>
               <p className="text-base text-neutral-400">
