@@ -1,56 +1,89 @@
-import { resourcesLinks, platformLinks, communityLinks } from "../constants";
-const Footer = () => {
+import cnot from "../assets/CNOT.png";
+import { navigation } from "../constants";
+
+export default function Footer() {
   return (
-    <footer className="mt-20 border-t py-10 border-neutral-700">
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
-        <div>
-          <h3 className="text-md font-semibold mb-4">Resources</h3>
-          <ul className="space-y-2">
-            {resourcesLinks.map((link, index) => (
-              <li key={index}>
+    <footer className="border-t border-neutral-800">
+      <div className="">
+        <div className="xl:grid xl:grid-cols-4 xl:gap-8 lg:mx-32 md:mx-16 px-6 pt-16 pb-8 sm:pt-24 lg:px-8 lg:py-16">
+          <div className="space-y-8">
+            <img
+              alt="Company name"
+              src={cnot}
+              className="h-20 w-20 object-contain"
+            />
+            <p className="text-sm/6 text-balance text-gray-300">
+              Cnot Perform Votre feuille de route vers le succès athlétique.
+            </p>
+            <div className="flex gap-x-6">
+              {navigation.social.map((item) => (
                 <a
-                  href={link.href}
-                  className="text-neutral-300 hover:text-white"
+                  key={item.name}
+                  href={item.href}
+                  className="text-gray-400 hover:text-gray-300"
                 >
-                  {link.text}
+                  <span className="sr-only">{item.name}</span>
+                  <item.icon aria-hidden="true" className="size-6" />
                 </a>
-              </li>
-            ))}
-          </ul>
+              ))}
+            </div>
+          </div>
+          <div>
+            <h3 className="text-sm/6 font-semibold text-white">
+              Liens Rapides
+            </h3>
+            <ul role="list" className="mt-6 space-y-4">
+              {navigation.solutions.map((item) => (
+                <li key={item.name}>
+                  <a
+                    href={item.href}
+                    className="text-sm/6 text-gray-400 hover:text-white"
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-sm/6 font-semibold text-white">Company</h3>
+            <ul role="list" className="mt-6 space-y-4">
+              {navigation.company.map((item) => (
+                <li key={item.name}>
+                  <a
+                    href={item.href}
+                    className="text-sm/6 text-gray-400 hover:text-white"
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-sm/6 font-semibold text-white">
+              Contactez-nous
+            </h3>
+            <ul role="list" className="mt-6 space-y-4">
+              {navigation.support.map((item) => (
+                <li key={item.name}>
+                  <a
+                    href={item.href}
+                    className="text-sm/6 text-gray-400 hover:text-white"
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-        <div>
-          <h3 className="text-md font-semibold mb-4">Platform</h3>
-          <ul className="space-y-2">
-            {platformLinks.map((link, index) => (
-              <li key={index}>
-                <a
-                  href={link.href}
-                  className="text-neutral-300 hover:text-white"
-                >
-                  {link.text}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div>
-          <h3 className="text-md font-semibold mb-4">Community</h3>
-          <ul className="space-y-2">
-            {communityLinks.map((link, index) => (
-              <li key={index}>
-                <a
-                  href={link.href}
-                  className="text-neutral-300 hover:text-white"
-                >
-                  {link.text}
-                </a>
-              </li>
-            ))}
-          </ul>
+        <div className="border-t border-neutral-800 w-full">
+          <p className="text-sm/6 text-gray-400 lg:mx-32 md:mx-16 py-6 px-6">
+            &copy; Copyright 2025 - CNOT PERFORM. Tous droits réservés
+          </p>
         </div>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

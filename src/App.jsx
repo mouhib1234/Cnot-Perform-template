@@ -1,23 +1,34 @@
 import Navbar from "./Sections/Navbar";
 import HeroSection from "./Sections/HeroSection";
 import FeatureSection from "./Sections/FeatureSection";
-import Workflow from "./Sections/Workflow";
+import Fonctionalities from "./Sections/Fonctionalities ";
 import Footer from "./Sections/Footer";
-import Pricing from "./Sections/Pricing";
-import Testimonials from "./Sections/Testimonials";
 import EventSection from "./Sections/EventSection";
+import AboutUs from "./Sections/AboutUs";
+import Partners from "./Sections/Partners";
+import OlympicGameTimer from "./Sections/OlympicGameTimer";
+import ContactUs from "./Sections/ContactUs";
+import OlympiChampions from "./Sections/OlympiChampions";
+import Metrics from "./Sections/Metrics";
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <div className="lg:mx-32 md:mx-16 px-6">
+      <div>
         <HeroSection />
+
+        <Partners />
+        <Metrics />
+
+        <OlympicGameTimer />
+        <AboutUs />
         <FeatureSection />
-        <Workflow />
+        <Fonctionalities />
+        <OlympiChampions />
         <EventSection />
-        <Pricing />
-        <Testimonials />
+
+        <ContactUs />
         <Footer />
       </div>
     </>

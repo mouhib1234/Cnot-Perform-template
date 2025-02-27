@@ -28,11 +28,8 @@ const Navbar = () => {
             <a href="#" className="py-2 px-3">
               Sign In
             </a>
-            <a
-              href="#"
-              className="bg-[#ba52ed] py-2 px-6 rounded-full"
-            >
-              S'inscrire 
+            <a href="#" className="bg-[#ba52ed] py-2 px-6 rounded-full">
+              S'inscrire
             </a>
           </div>
           <div className="lg:hidden md:flex flex-col justify-end">
